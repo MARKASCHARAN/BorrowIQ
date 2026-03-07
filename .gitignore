@@ -1,0 +1,52 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# IDE
+.idea/
+.vscode/
+
+# Coverage
+coverage/
+
+# Temp files
+*.bak
+*.swp
+*.swo
+*.tmp
+*.cache
+*.pid
+*.seed
+*.pid.lock
+
+# Python
+venv/
+__pycache__/
+
+# Hardhat
+artifacts/
+cache/
+typechain-types/
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+.next/
+
+# Locks
+package-lock.json
+yarn.lock
+
+# TS
+*.tsbuildinfo
