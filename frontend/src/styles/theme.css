@@ -1,0 +1,14 @@
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #050505;
+    --text-primary: #F3F3F3;
+    --text-muted: #9A9A9A;
+
+    --accent-primary: #FF4D2D;
+    --accent-soft: #FF6A3D;
+
+    --border-soft: rgba(255, 255, 255, 0.08);
+    --card-bg: rgba(255, 255, 255, 0.03);
+
+    --glass-blur: blur(18px);
+}
