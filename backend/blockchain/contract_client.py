@@ -14,7 +14,9 @@ w3 = Web3(Web3.HTTPProvider(RPC))
 
 REGISTRY_ADDRESS = Web3.to_checksum_address(os.getenv("CREDIT_SCORE_REGISTRY"))
 
-with open("../artifacts/contracts/CreditScoreRegistry.sol/CreditScoreRegistry.json") as f:
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(base_dir, "../abi/CreditScoreRegistry.json")) as f:
     registry_abi = json.load(f)["abi"]
 
 registry_contract = w3.eth.contract(
@@ -28,7 +30,7 @@ registry_contract = w3.eth.contract(
 
 LOAN_MANAGER_ADDRESS = Web3.to_checksum_address(os.getenv("LOAN_MANAGER"))
 
-with open("../artifacts/contracts/LoanManager.sol/LoanManager.json") as f:
+with open(os.path.join(base_dir, "../abi/LoanManager.json")) as f:
     loan_abi = json.load(f)["abi"]
 
 loan_manager_contract = w3.eth.contract(
@@ -42,7 +44,7 @@ loan_manager_contract = w3.eth.contract(
 
 RATE_MODEL_ADDRESS = Web3.to_checksum_address(os.getenv("INTEREST_RATE_MODEL"))
 
-with open("../artifacts/contracts/InterestRateModel.sol/InterestRateModel.json") as f:
+with open(os.path.join(base_dir, "../abi/InterestRateModel.json")) as f:
     rate_abi = json.load(f)["abi"]
 
 rate_model_contract = w3.eth.contract(
@@ -56,7 +58,7 @@ rate_model_contract = w3.eth.contract(
 
 LENDING_POOL_ADDRESS = Web3.to_checksum_address(os.getenv("LENDING_POOL"))
 
-with open("../artifacts/contracts/LendingPool.sol/LendingPool.json") as f:
+with open(os.path.join(base_dir, "../abi/LendingPool.json")) as f:
     pool_abi = json.load(f)["abi"]
 
 lending_pool_contract = w3.eth.contract(
