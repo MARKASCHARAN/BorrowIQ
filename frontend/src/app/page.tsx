@@ -62,7 +62,7 @@ export default function LandingPage() {
 
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#FF4D2D]/30 bg-[#FF4D2D]/10 text-[#FF4D2D] font-mono text-[10px] sm:text-[11px] font-bold tracking-widest uppercase mb-6 max-w-fit lg:mt-12">
             <span className="w-2 h-2 rounded-full bg-[#FF4D2D] animate-pulse" />
-            BUIDL CTC Hackathon: BUIDL For The Real World
+            Built For The Real World
           </div>
 
           <h1 className="text-[56px] md:text-[80px] leading-[1.05] font-semibold tracking-tight max-w-2xl mb-8 text-black">

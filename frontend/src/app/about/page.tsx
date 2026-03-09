@@ -139,7 +139,7 @@ export default function AboutPage() {
                         <div className="space-y-32">
                             {[
                                 { name: 'Wallet Activity', desc: 'Real-time on-chain footprint monitoring', icon: Globe },
-                                { name: 'AI Credit Engine', desc: 'Neural analysis of over 500+ data factors', icon: Cpu, glow: true },
+                                { name: 'AI Credit Engine', desc: 'Neural analysis of over data factors', icon: Cpu, glow: true },
                                 { name: 'Risk Categorization', desc: 'Dynamic interest & margin assignment', icon: ShieldCheck },
                                 { name: 'On-Chain Settlement', desc: 'Automated lending through smart contracts', icon: LayoutTemplate, accent: true }
                             ].map((layer, i) => (
